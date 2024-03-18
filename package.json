@@ -1,0 +1,36 @@
+{
+  "name": "atomic-swap",
+  "version": "0.0.0",
+  "description": "The Ethereum Atomic Swap library is an official reference implementation of atomic swaps on Ethereum for the Republic Protocol, written in Solidity. This library supports atomic swaps between Ether and ERC20 pairs, as well as the Ether and ERC20 side of cross-chain atomic swaps.",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "coverage": "./node_modules/.bin/solidity-coverage",
+    "deploy-dev": "truffle deploy --network=\"development\" --reset",
+    "deploy-prod": "truffle deploy --network=\"ropsten\"",
+    "ganache": "ganache-cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/republicprotocol/atomic-swap.git"
+  },
+  "author": "Nadimpalli Susruth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/republicprotocol/atomic-swap/issues"
+  },
+  "homepage": "https://github.com/republicprotocol/atomic-swap#readme",
+  "devDependencies": {
+    "bn.js": "^4.11.8",
+    "chai": "^4.2.0",
+    "dotenv": "^6.2.0",
+    "ganache-cli": "^6.4.1",
+    "openzeppelin-test-helpers": "^0.1.2",
+    "solhint": "^2.0.0",
+    "truffle": "^5.0.7"
+  }
+}
